@@ -3334,8 +3334,8 @@ if (statsSection) statsObserver.observe(statsSection);
   function compute() {
     const emptyPerWeek = Math.max(0, parseFloat(emptyI.value) || 0);
     const weekly  = emptyPerWeek * NABAD_RATE;
-    const monthly = weekly * 4;
     const yearly  = weekly * 52;
+    const monthly = yearly / 12;
 
     const fmtApprox = n => '~$' + Math.round(n).toLocaleString('en-US');
     bigEl.innerHTML = fmtApprox(weekly) + '<small>/week</small>';

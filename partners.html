@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300;400;500&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="assets/IMG_7429.png"/>
+<link rel="apple-touch-icon" href="assets/IMG_7429.png"/>
 <style>
 /* ── TOKENS ── */
 :root {
@@ -331,89 +333,17 @@ nav.scrolled {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 96px;
 }
-.gs-step {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  padding-top: 32px;
-  border-top: 1px solid rgba(30,26,23,0.12);
-}
-.gs-num-inline {
-  font-family: var(--f-display);
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  color: var(--terra);
-}
+.gs-step { display: flex; flex-direction: column; gap: 28px; }
 .gs-img {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/11;
   border-radius: 24px;
   overflow: hidden;
-  position: relative;
-  background:
-    radial-gradient(120% 100% at 0% 0%, rgba(255,255,255,0.18) 0%, transparent 55%),
-    radial-gradient(140% 120% at 100% 100%, rgba(30,26,23,0.35) 0%, transparent 60%),
-    linear-gradient(135deg, var(--terra) 0%, var(--terra-d) 100%);
-  box-shadow:
-    0 30px 70px -30px rgba(176,110,82,0.55),
-    inset 0 1px 0 rgba(255,255,255,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 48px 56px;
-  color: #fff;
-  isolation: isolate;
+  background: rgba(30,26,23,0.05);
 }
-.gs-img::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 18% 28%, rgba(255,255,255,0.07) 0%, transparent 38%),
-    radial-gradient(circle at 82% 70%, rgba(255,255,255,0.06) 0%, transparent 42%);
-  z-index: 0;
-}
-.gs-img > * { position: relative; z-index: 1; }
-.gs-num {
-  font-family: var(--f-display);
-  font-size: clamp(110px, 13vw, 180px);
-  font-weight: 300;
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-  color: rgba(255,255,255,0.96);
-  font-style: italic;
-}
-.gs-num small {
-  display: block;
-  font-family: var(--f-body);
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin-top: 14px;
-  color: rgba(255,255,255,0.75);
-}
-.gs-icon {
-  width: clamp(72px, 9vw, 112px);
-  height: clamp(72px, 9vw, 112px);
-  border-radius: 50%;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.22);
-  display: grid;
-  place-items: center;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  flex-shrink: 0;
-}
-.gs-icon svg { width: 46%; height: 46%; color: #fff; }
-@media (max-width: 640px) {
-  .gs-img { padding: 32px 28px; aspect-ratio: 4/3; }
-}
+.gs-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .gs-title {
   font-family: var(--f-display);
   font-size: clamp(32px, 3.4vw, 44px);
@@ -1663,7 +1593,7 @@ nav.scrolled {
 }
 .mac-content {
   display: flex;
-  height: 540px;
+  height: 420px;
 }
 .mac-sidebar {
   width: 200px;
@@ -2310,16 +2240,6 @@ footer {
   box-shadow: 0 0 0 3px rgba(176,110,82,0.12);
 }
 .form-input::placeholder { color: rgba(30,26,23,0.28); }
-select.form-input {
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1l5 5 5-5' stroke='%231E1A17' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 18px center;
-  padding-right: 44px;
-  cursor: pointer;
-}
-select.form-input:invalid { color: rgba(30,26,23,0.45); }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .form-submit {
   width: 100%;
@@ -2646,6 +2566,19 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
   .iphone-wrap { height: 480px; }
 }
 </style>
+<!-- OG START -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://kevinazarproo-rgb.github.io/nabad-website/partners.html"/>
+<meta property="og:title" content="For studios — Nabad"/>
+<meta property="og:description" content="Fill empty spots, grow incremental revenue, reach new clients. Become a Nabad partner studio."/>
+<meta property="og:image" content="https://kevinazarproo-rgb.github.io/nabad-website/assets/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="For studios — Nabad"/>
+<meta name="twitter:description" content="Fill empty spots, grow incremental revenue, reach new clients. Become a Nabad partner studio."/>
+<meta name="twitter:image" content="https://kevinazarproo-rgb.github.io/nabad-website/assets/og-image.jpg"/>
+<!-- OG END -->
 </head>
 <body>
 
@@ -2657,7 +2590,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
     </button>
     <div class="modal-eyebrow">Studio Partner Program</div>
     <h2 class="modal-title">Join<br/><em>Nabad</em></h2>
-    <p class="modal-sub">Tell us about your studio — we'll get back to you within 48 hours.</p>
+    <p class="modal-sub">Tell us about your studio. We'll get back to you within 48 hours.</p>
     <form action="https://formspree.io/f/xwvyqbnp" method="POST">
       <div class="form-row">
         <div class="form-group">
@@ -2684,28 +2617,8 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
         </div>
       </div>
       <div class="form-group">
-        <label class="form-label">Business type</label>
-        <select class="form-input" name="business_type" id="business-type" required onchange="toggleBusinessOther()">
-          <option value="" disabled selected>Select your business type</option>
-          <option value="Fitness studio">Fitness studio</option>
-          <option value="Gym">Gym</option>
-          <option value="Pilates / Lagree studio">Pilates / Lagree studio</option>
-          <option value="Yoga studio">Yoga studio</option>
-          <option value="Boxing / Martial arts">Boxing / Martial arts</option>
-          <option value="Wellness center">Wellness center</option>
-          <option value="Spa">Spa</option>
-          <option value="Beauty salon">Beauty salon</option>
-          <option value="Other">Other</option>
-        </select>
-        <input class="form-input" type="text" name="business_type_other" id="business-type-other" placeholder="Tell us what kind of business you run" style="display:none;margin-top:10px;"/>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Website or social media link</label>
-        <input class="form-input" type="text" name="website" placeholder="yourstudio.com or @yourstudio on Instagram" required/>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Current booking &amp; POS system</label>
-        <input class="form-input" type="text" name="booking_pos" placeholder="e.g. In2, WhatsApp, Besport, Mindbody, none..."/>
+        <label class="form-label">Type of classes</label>
+        <input class="form-input" type="text" name="classes" placeholder="Pilates, Lagree, Yoga..."/>
       </div>
       <button class="form-submit" type="submit">Send my application →</button>
     </form>
@@ -2740,7 +2653,52 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
 
   <!-- iPhone hero mockup -->
   <div class="hero-device">
-    <img src="assets/platform-mockup.png" alt="Nabad app on iPhone" class="platform-mockup-img" style="max-height:536px;"/>
+    <div class="iphone" style="width:260px;height:536px;border-radius:48px;">
+      <div class="iphone-notch" style="width:90px;height:26px;top:10px;border-radius:18px;"></div>
+      <div class="iphone-screen" style="inset:7px;border-radius:42px;">
+        <div class="iphone-statusbar" style="height:48px;">
+          <span class="iphone-sb-time">9:41</span>
+          <div class="iphone-sb-icons">
+            <svg viewBox="0 0 14 14" fill="currentColor" style="color:var(--ink)"><path d="M1 5h2v6H1zM5 3h2v8H5zM9 1h2v10H9zM13 0h1v11h-1z" opacity=".7"/></svg>
+            <svg viewBox="0 0 14 14" fill="none" style="width:14px;height:14px"><rect x="1" y="3" width="10" height="8" rx="1.5" stroke="var(--ink)" stroke-width="1.3"/><rect x="11.5" y="5.5" width="2" height="3" rx=".75" fill="var(--ink)" opacity=".5"/><rect x="2" y="4.5" width="7" height="5" rx=".75" fill="var(--terra)"/></svg>
+          </div>
+        </div>
+        <div class="app-header">
+          <div class="app-header-logo">Nabad</div>
+          <div class="app-header-sub">3 studios near you</div>
+        </div>
+        <div class="app-hero-img">
+          <div style="font-size:11px;color:rgba(237,235,230,0.6);letter-spacing:0.1em;text-transform:uppercase;">This week's pick</div>
+          <div class="app-hero-title">Barefoot<br/>Pilates Studio</div>
+          <div class="app-hero-sub">Sioufi, Beirut · Starting $12</div>
+        </div>
+        <div class="app-section-label">Nearby Studios</div>
+        <div class="app-studio-card">
+          <div class="app-studio-thumb">M</div>
+          <div><div class="app-studio-name">Monday Fitness</div><div class="app-studio-loc">Beirut · Lagree</div></div>
+          <div class="app-studio-price">$15</div>
+        </div>
+        <div class="app-studio-card">
+          <div class="app-studio-thumb" style="background:linear-gradient(135deg,#6B5540,#9A7A62);">K</div>
+          <div><div class="app-studio-name">Kaizen Pilates</div><div class="app-studio-loc">Beirut · Pilates</div></div>
+          <div class="app-studio-price">$12</div>
+        </div>
+        <div class="app-tabbar">
+          <div class="app-tab active">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M3 10L10 3l7 7" stroke="var(--terra)" stroke-width="1.5" stroke-linecap="round"/><path d="M5 8.5V17h4v-4h2v4h4V8.5" stroke="var(--terra)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Explore</span>
+          </div>
+          <div class="app-tab">
+            <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="13" rx="2" stroke="#aaa" stroke-width="1.5"/><path d="M7 2v4M13 2v4M3 9h14" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span style="color:#aaa">Book</span>
+          </div>
+          <div class="app-tab">
+            <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="8" r="4" stroke="#aaa" stroke-width="1.5"/><path d="M3 18c0-3.31 3.13-6 7-6s7 2.69 7 6" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span style="color:#aaa">Profile</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="hero-scroll">
@@ -2774,7 +2732,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
   <div class="reveal">
     <div class="section-tag">Why partner with Nabad</div>
     <h2 class="section-title">Make every<br/>spot <em>count.</em></h2>
-    <p class="why-intro">Studios in Lebanon fill on average just <em>37%</em> of their capacity directly. The rest is revenue left on the table — and Nabad is built to recover it, on your terms.</p>
+    <p class="why-intro">Studios in Lebanon fill on average just <em>37%</em> of their capacity directly. The rest is revenue left on the table. Nabad is built to recover it, on your terms.</p>
   </div>
   <div class="why-grid">
     <div class="why-card reveal" style="transition-delay:0.0s">
@@ -2782,14 +2740,14 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
         <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="14" height="3" rx="1.5" fill="currentColor" opacity="0.45"/><rect x="3" y="10.5" width="18" height="3" rx="1.5" fill="currentColor" opacity="0.65"/><rect x="3" y="16" width="11" height="3" rx="1.5" fill="currentColor"/></svg>
       </div>
       <div class="why-title">Fill <em>empty spots</em></div>
-      <div class="why-desc">Nabad is built to fill available class spots and appointment times with high-intent clients — bringing you revenue from bookings that would have otherwise gone unfilled, so no money is left on the table.</div>
+      <div class="why-desc">Nabad is built to fill available class spots and appointment times with high-intent clients, bringing you revenue from bookings that would have otherwise gone unfilled, so no money is left on the table.</div>
     </div>
     <div class="why-card reveal" style="transition-delay:0.1s">
       <div class="why-icon">
         <svg viewBox="0 0 24 24" fill="none"><path d="M3 13l3-3 3 3 4-5 4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       </div>
       <div class="why-title">Grow <em>incremental revenue</em> while protecting your regulars</div>
-      <div class="why-desc">Nabad only fills your unused spots — so your direct members can still book their favorite times. Extra reservations put more money in your pocket without adding extra work.</div>
+      <div class="why-desc">Nabad only fills your unused spots, so your direct members can still book their favorite times. Extra reservations put more money in your pocket without adding extra work.</div>
     </div>
     <div class="why-card reveal" style="transition-delay:0.2s">
       <div class="why-icon">
@@ -2811,7 +2769,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
     <div class="step-card reveal" style="transition-delay:0.0s">
       <div class="step-num">01</div>
       <div class="step-title">Join as<br/>a partner</div>
-      <div class="step-desc">Sign a simple agreement to join the Nabad network. Quick, easy, and ready in just a few minutes.</div>
+      <div class="step-desc">Sign a simple agreement. No exclusivity, no minimum commitments. Your existing clients and pricing stay untouched.</div>
       <div class="step-icon">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2C6.03 2 2 6.03 2 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 4v5l4 2" stroke="var(--terra)" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
@@ -2819,7 +2777,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
     <div class="step-card reveal" style="transition-delay:0.1s">
       <div class="step-num">02</div>
       <div class="step-title">Set your<br/>available spots</div>
-      <div class="step-desc">Decide how many spots per class to open to Nabad members. You stay in full control — adjust any time.</div>
+      <div class="step-desc">Decide how many spots per class to open to Nabad members. You stay in full control. Adjust any time.</div>
       <div class="step-icon">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="5" width="16" height="14" rx="2" stroke="var(--terra)" stroke-width="1.5"/><path d="M7 2v6M15 2v6M3 10h16" stroke="var(--terra)" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
@@ -2827,7 +2785,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
     <div class="step-card reveal" style="transition-delay:0.2s">
       <div class="step-num">03</div>
       <div class="step-title">We fill<br/>your classes</div>
-      <div class="step-desc">Nabad drives real paying clients to your studio. Bookings appear automatically in your dashboard — no extra work.</div>
+      <div class="step-desc">Nabad drives real paying clients to your studio. Bookings appear automatically in your dashboard. No extra work.</div>
       <div class="step-icon">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2l2.4 7.4H21l-6.2 4.5 2.4 7.4L11 17l-6.2 4.3 2.4-7.4L1 9.4h7.6L11 2z" stroke="var(--terra)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
@@ -2835,7 +2793,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
     <div class="step-card reveal" style="transition-delay:0.3s">
       <div class="step-num">04</div>
       <div class="step-title">Get paid<br/>every month</div>
-      <div class="step-desc">Receive a clean monthly transfer. Full transparency — see exactly how many Nabad sessions ran and what you earned.</div>
+      <div class="step-desc">Receive a clean monthly transfer. Full transparency. See exactly how many Nabad sessions ran and what you earned.</div>
       <div class="step-icon">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="5" width="18" height="14" rx="2" stroke="var(--terra)" stroke-width="1.5"/><path d="M2 10h18" stroke="var(--terra)" stroke-width="1.5"/><circle cx="7" cy="15" r="1.5" fill="var(--terra)"/></svg>
       </div>
@@ -2855,7 +2813,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
         </div>
         <div>
           <div class="app-feature-title">Booking software included</div>
-          <div class="app-feature-desc">Full studio management — scheduling, client tracking, and real-time analytics, free for every partner.</div>
+          <div class="app-feature-desc">Full studio management: scheduling, client tracking, and real-time analytics, free for every partner.</div>
         </div>
       </div>
       <div class="app-feature">
@@ -2881,8 +2839,69 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
 
   <!-- iPhone mockup -->
   <div class="reveal-right">
-    <div class="iphone-wrap" style="position:relative;height:660px;display:flex;align-items:center;justify-content:center;">
-      <img src="assets/platform-mockup.png" alt="Nabad app on iPhone" class="platform-mockup-img"/>
+    <div class="iphone-wrap" style="position:relative;height:660px;">
+      <!-- Main phone -->
+      <div class="iphone">
+        <div class="iphone-notch"></div>
+        <div class="iphone-screen">
+          <div class="iphone-statusbar">
+            <span class="iphone-sb-time">9:41</span>
+            <div class="iphone-sb-icons">
+              <svg viewBox="0 0 14 14" fill="currentColor" style="color:var(--ink)"><path d="M1 5h2v6H1zM5 3h2v8H5zM9 1h2v10H9z" opacity=".7"/></svg>
+              <svg viewBox="0 0 14 14" fill="none" style="width:14px;height:14px"><rect x="1" y="3" width="10" height="8" rx="1.5" stroke="var(--ink)" stroke-width="1.3"/><rect x="11.5" y="5.5" width="2" height="3" rx=".75" fill="var(--ink)" opacity=".5"/><rect x="2" y="4.5" width="7" height="5" rx=".75" fill="var(--terra)"/></svg>
+            </div>
+          </div>
+          <div class="app-header">
+            <div class="app-header-logo">Nabad</div>
+            <div class="app-header-sub">Beirut · 9 studios near you</div>
+          </div>
+          <div class="app-hero-img" style="height:170px;">
+            <div style="font-size:10px;color:rgba(237,235,230,0.55);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:4px;">⭐ Top rated this week</div>
+            <div class="app-hero-title">Ora Pilates<br/>Studio</div>
+            <div class="app-hero-sub">Le Mall, Beirut · Reformer Pilates</div>
+            <div style="margin-top:10px;padding:6px 16px;background:rgba(237,235,230,0.18);border-radius:100px;font-size:11px;color:var(--offwhite);">From $12 · 4 spots left</div>
+          </div>
+          <div class="app-section-label">All Studios</div>
+          <div class="app-studio-card">
+            <div class="app-studio-thumb">S</div>
+            <div><div class="app-studio-name">SOAR Lagree Studio</div><div class="app-studio-loc">Beirut · Lagree</div></div>
+            <div class="app-studio-price">$14</div>
+          </div>
+          <div class="app-studio-card">
+            <div class="app-studio-thumb" style="background:linear-gradient(135deg,#556B7A,#7D98A8);">B</div>
+            <div><div class="app-studio-name">BEAM Studio</div><div class="app-studio-loc">Beirut · Pilates</div></div>
+            <div class="app-studio-price">$11</div>
+          </div>
+          <div class="app-studio-card">
+            <div class="app-studio-thumb" style="background:linear-gradient(135deg,#7A6B42,#A8956A);">K</div>
+            <div><div class="app-studio-name">Kurv Studio</div><div class="app-studio-loc">Beirut · Pilates</div></div>
+            <div class="app-studio-price">$13</div>
+          </div>
+          <div class="app-tabbar">
+            <div class="app-tab active">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M3 10L10 3l7 7" stroke="var(--terra)" stroke-width="1.5" stroke-linecap="round"/><path d="M5 8.5V17h4v-4h2v4h4V8.5" stroke="var(--terra)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Explore</span>
+            </div>
+            <div class="app-tab">
+              <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="13" rx="2" stroke="#aaa" stroke-width="1.5"/><path d="M7 2v4M13 2v4M3 9h14" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span style="color:#aaa">Book</span>
+            </div>
+            <div class="app-tab">
+              <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="8" r="4" stroke="#aaa" stroke-width="1.5"/><path d="M3 18c0-3.31 3.13-6 7-6s7 2.69 7 6" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span style="color:#aaa">Profile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second phone (tilted, behind) -->
+      <div class="iphone-2">
+        <div class="iphone-2-screen">
+          <div class="i2-logo">N</div>
+          <div class="i2-sub">Your studio.<br/>Our network.</div>
+          <div class="i2-badge">nabad.studio</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -2894,7 +2913,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       <div class="section-tag">Marketing & Visibility</div>
       <h2 class="section-title">We don't just send clients —<br/><em>we put you on the map.</em></h2>
     </div>
-    <p class="section-body reveal-right">Every partner studio gets exposure across our channels — in-app, on social, and in front of our growing community of subscribers. Your studio, in front of the right eyes, every week.</p>
+    <p class="section-body reveal-right">Every partner studio gets exposure across our channels: in-app, on social, and in front of our growing community of subscribers. Your studio, in front of the right eyes, every week.</p>
   </div>
 
   <div class="mkt-grid">
@@ -2903,7 +2922,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       <div>
         <div class="mkt-eyebrow">In the App</div>
         <h3 class="mkt-title">Featured on the<br/><em>Nabad home screen</em></h3>
-        <p class="mkt-desc">Rotating studio spotlights, "This week's pick," and curated collections — your studio surfaces in front of every subscriber, every week.</p>
+        <p class="mkt-desc">Rotating studio spotlights, "This week's pick," and curated collections. Your studio surfaces in front of every subscriber, every week.</p>
       </div>
       <div class="mkt-mockup">
         <div class="mkt-mockup-pin feat">
@@ -2938,7 +2957,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       </div>
       <div class="mkt-eyebrow">Social</div>
       <h3 class="mkt-title">Instagram features</h3>
-      <p class="mkt-desc">Stories, reels and dedicated posts highlighting your studio, your trainers, your vibe — straight to our followers.</p>
+      <p class="mkt-desc">Stories, reels and dedicated posts highlighting your studio, your trainers, your vibe. Straight to our followers.</p>
     </div>
 
     <!-- Newsletter -->
@@ -2948,7 +2967,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       </div>
       <div class="mkt-eyebrow">Newsletter</div>
       <h3 class="mkt-title">Weekly drops</h3>
-      <p class="mkt-desc">Featured in our subscriber email — new studios, special classes, exclusive openings — direct to inboxes that book.</p>
+      <p class="mkt-desc">Featured in our subscriber email: new studios, special classes, exclusive openings, direct to inboxes that book.</p>
     </div>
 
     <!-- Launch / events -->
@@ -2958,7 +2977,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       </div>
       <div class="mkt-eyebrow">Events</div>
       <h3 class="mkt-title">Launch spotlights</h3>
-      <p class="mkt-desc">Open-class events, partner launch nights and pop-up sessions — we co-host so new clients walk through your door.</p>
+      <p class="mkt-desc">Open-class events, partner launch nights and pop-up sessions. We co-host so new clients walk through your door.</p>
       <div class="mkt-stat">Co-hosted<span class="mkt-stat-label">on us</span></div>
     </div>
 
@@ -2969,7 +2988,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       </div>
       <div class="mkt-eyebrow">Influencers</div>
       <h3 class="mkt-title">Creator partnerships</h3>
-      <p class="mkt-desc">We bring local fitness creators and lifestyle influencers into your studio — content, reach, and bookings that follow.</p>
+      <p class="mkt-desc">We bring local fitness creators and lifestyle influencers into your studio. Content, reach, and bookings that follow.</p>
       <div class="mkt-stat">Curated<span class="mkt-stat-label">network</span></div>
     </div>
   </div>
@@ -2985,29 +3004,29 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
 <section id="model">
   <div class="reveal" style="text-align:center;">
     <div class="section-tag" style="justify-content:center;">How the system works</div>
-    <h2 class="section-title" style="text-align:center;">Turn empty spots<br/><em>into revenue</em></h2>
+    <h2 class="section-title" style="text-align:center;">Auto or manual,<br/><em>your call</em></h2>
   </div>
   <div class="model-flow reveal">
     <div class="model-card">
-      <div class="model-who">Step 1 · Your empty spots</div>
-      <div class="model-price">List the<br/>empty seats</div>
-      <div class="model-desc">Open up the spots that would otherwise stay <strong>empty</strong> — per class, per day, per studio. You decide what you want to fill.</div>
+      <div class="model-who">Step 1 · Pricing</div>
+      <div class="model-price">Set your<br/>resale price</div>
+      <div class="model-desc">Choose <strong>auto</strong> and let Nabad price your spots dynamically, or set them <strong>manually</strong>. You stay in control of every cent.</div>
     </div>
     <div class="model-arrow">
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 14h18M17 8l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
     <div class="model-card featured">
-      <div class="model-who">Step 2 · Your discount</div>
-      <div class="model-price">Pick <strong>20%</strong> to<br/><strong>50% off</strong></div>
-      <div class="model-desc">You choose the discount on those empty spots — anywhere between <strong>20%</strong> and <strong>50%</strong> off your public price. You stay fully in control of how much you discount.</div>
+      <div class="model-who">Step 2 · Inventory</div>
+      <div class="model-price">Pick the spots<br/>to list</div>
+      <div class="model-desc">Decide <strong>auto</strong> or <strong>manually</strong> which spots go live (per class, per day, per studio). Adjust any time.</div>
     </div>
     <div class="model-arrow">
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 14h18M17 8l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
     <div class="model-card">
-      <div class="model-who">Step 3 · We resell</div>
-      <div class="model-price">Nabad fills<br/>your classes</div>
-      <div class="model-desc">Nabad resells those spots to its community — <strong>always below your public price</strong> — turning seats that would have stayed empty into real, paying bookings.</div>
+      <div class="model-who">Step 3 · We sell</div>
+      <div class="model-price">Nabad<br/>resells</div>
+      <div class="model-desc">We resell those spots to our community, driving real bookings to spots that would otherwise stay empty.</div>
     </div>
   </div>
 </section>
@@ -3017,7 +3036,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
   <div class="reveal-left">
     <div class="section-tag">Studio Dashboard</div>
     <h2 class="section-title">Everything you need,<br/><em>in one place</em></h2>
-    <p class="section-body" style="color:rgba(237,235,230,0.6);margin-top:24px;">Every partner studio gets access to a full management dashboard — bookings, revenue tracking, client insights, and more.</p>
+    <p class="section-body" style="color:rgba(237,235,230,0.6);margin-top:24px;">Every partner studio gets access to a full management dashboard: bookings, revenue tracking, client insights, and more.</p>
     <div style="margin-top:40px;display:flex;flex-direction:column;gap:16px;">
       <div style="display:flex;align-items:center;gap:16px;font-size:17px;font-weight:300;color:rgba(237,235,230,0.7);">
         <div style="width:8px;height:8px;border-radius:50%;background:var(--terra);flex-shrink:0;"></div>
@@ -3029,11 +3048,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       </div>
       <div style="display:flex;align-items:center;gap:16px;font-size:17px;font-weight:300;color:rgba(237,235,230,0.7);">
         <div style="width:8px;height:8px;border-radius:50%;background:var(--terra);flex-shrink:0;"></div>
-        Marketing tools — profile, photos, class descriptions
-      </div>
-      <div style="display:flex;align-items:center;gap:16px;font-size:17px;font-weight:300;color:rgba(237,235,230,0.7);">
-        <div style="width:8px;height:8px;border-radius:50%;background:var(--terra);flex-shrink:0;"></div>
-        Seamless integration with your existing booking software
+        Marketing tools: profile, photos, class descriptions
       </div>
     </div>
   </div>
@@ -3046,8 +3061,66 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
         <div class="mac-dot green"></div>
         <div class="mac-title">Nabad Studio Dashboard</div>
       </div>
-      <div class="mac-content" style="padding:0;display:block;background:#FAFAF9;height:auto;">
-        <img src="assets/dashboard-mockup.jpg" alt="Nabad Studio Dashboard" style="width:100%;height:auto;display:block;"/>
+      <div class="mac-content">
+        <div class="mac-sidebar">
+          <div class="mac-sidebar-title">Nabad Studio</div>
+          <div class="mac-nav-item active">
+            <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.3"/></svg>
+            Overview
+          </div>
+          <div class="mac-nav-item">
+            <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="11" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M5 2v3M11 2v3M2 8h12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Bookings
+          </div>
+          <div class="mac-nav-item">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 13l3-5 3 3 3-6 3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Revenue
+          </div>
+          <div class="mac-nav-item">
+            <svg viewBox="0 0 16 16" fill="none"><circle cx="6" cy="6" r="3.5" stroke="currentColor" stroke-width="1.3"/><path d="M9.5 9.5l4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Clients
+          </div>
+          <div class="mac-nav-item" style="margin-top:auto;">
+            <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M3 14c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Profile
+          </div>
+        </div>
+        <div class="mac-main">
+          <div class="mac-topbar">
+            <div class="mac-welcome">Good morning, <span>Barefoot Pilates</span> 👋</div>
+            <div class="mac-date">May 2026</div>
+          </div>
+          <div class="mac-cards">
+            <div class="mac-card">
+              <div class="mac-card-label">Nabad bookings</div>
+              <div class="mac-card-val">34</div>
+              <div class="mac-card-sub">↑ 12% vs last month</div>
+            </div>
+            <div class="mac-card">
+              <div class="mac-card-label">Revenue this month</div>
+              <div class="mac-card-val">$340</div>
+              <div class="mac-card-sub">From 34 sessions @ $10</div>
+            </div>
+            <div class="mac-card">
+              <div class="mac-card-label">New clients</div>
+              <div class="mac-card-val">8</div>
+              <div class="mac-card-sub">Converted from Nabad</div>
+            </div>
+          </div>
+          <div class="mac-chart-area">
+            <div class="mac-chart-label">Monthly Nabad Sessions</div>
+            <div class="mac-chart-bars">
+              <div class="mc-bar" style="height:30%;"></div>
+              <div class="mc-bar" style="height:45%;"></div>
+              <div class="mc-bar" style="height:38%;"></div>
+              <div class="mc-bar" style="height:55%;"></div>
+              <div class="mc-bar" style="height:48%;"></div>
+              <div class="mc-bar" style="height:70%;"></div>
+              <div class="mc-bar" style="height:65%;"></div>
+              <div class="mc-bar" style="height:80%;opacity:1;"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -3067,7 +3140,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       <div>
         <div class="benefit-num">01</div>
         <div class="benefit-title">Fill your empty spots</div>
-        <div class="benefit-desc">Every unsold class becomes revenue. Nabad turns your idle capacity into a steady stream of bookings — automatically.</div>
+        <div class="benefit-desc">Every unsold class becomes revenue. Nabad turns your idle capacity into a steady stream of bookings, automatically.</div>
       </div>
     </div>
     <div class="benefit-card reveal" style="transition-delay:0.1s">
@@ -3077,7 +3150,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       <div>
         <div class="benefit-num">02</div>
         <div class="benefit-title">Acquire new clients</div>
-        <div class="benefit-desc">Nabad members who discover your studio regularly convert into direct, loyal long-term clients — at no acquisition cost.</div>
+        <div class="benefit-desc">Nabad members who discover your studio regularly convert into direct, loyal long-term clients, at no acquisition cost.</div>
       </div>
     </div>
     <div class="benefit-card reveal" style="transition-delay:0.2s">
@@ -3087,7 +3160,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       <div>
         <div class="benefit-num">03</div>
         <div class="benefit-title">Free tech & marketing</div>
-        <div class="benefit-desc">Studio dashboard, booking system, client CRM, and app visibility — all included. Zero setup cost, zero monthly fee.</div>
+        <div class="benefit-desc">Studio dashboard, booking system, client CRM, and app visibility. All included. Zero setup cost, zero monthly fee.</div>
       </div>
     </div>
     <div class="benefit-card reveal" style="transition-delay:0.3s">
@@ -3097,7 +3170,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       <div>
         <div class="benefit-num">04</div>
         <div class="benefit-title">Zero risk. Zero cost.</div>
-        <div class="benefit-desc">No exclusivity. No upfront investment. You pay nothing and only benefit when sessions are booked.</div>
+        <div class="benefit-desc">No exclusivity. No upfront investment. No minimum commitments. You pay nothing and only benefit when sessions are booked.</div>
       </div>
     </div>
   </div>
@@ -3108,7 +3181,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
   <div class="reveal-left">
     <div class="section-tag">Our Vision</div>
     <h2 class="section-title">From Beirut<br/>to the whole<br/><em>country</em></h2>
-    <p class="section-body" style="color:rgba(237,235,230,0.55);margin-top:24px;">From Beirut to Dbayeh, Antelias to Tripoli — we've identified 250+ boutique fitness studios across Lebanon. We're building the network one founding partner at a time. The first studios to join get priority placement and exclusive early-adopter benefits.</p>
+    <p class="section-body" style="color:rgba(237,235,230,0.55);margin-top:24px;">From Beirut to Dbayeh, Antelias to Tripoli, we've identified 250+ boutique fitness studios across Lebanon. We're building the network one founding partner at a time. The first studios to join get priority placement and exclusive early-adopter benefits.</p>
     <div class="city-pills">
       <div class="city-pill">Beirut</div>
       <div class="city-pill">Hazmieh</div>
@@ -3145,7 +3218,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
   <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=1800&q=80&fit=crop&crop=center" alt="" aria-hidden="true"/>
   <div class="overlay-text reveal">
     <div class="overlay-quote">"Every empty reformer bed<br/>is revenue you can never recover."</div>
-    <div class="overlay-attr">— The Nabad mission</div>
+    <div class="overlay-attr">The Nabad mission</div>
   </div>
 </div>
 
@@ -3175,7 +3248,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
     <div class="calc-boom" id="calc-boom">
       <div class="boom-eyebrow">You could be earning around</div>
       <div class="boom-big" id="boom-big">~$1,500<small>/week</small></div>
-      <div class="boom-sub">Extra revenue every single week — money you're leaving on the table today, that Nabad turns back on for you.</div>
+      <div class="boom-sub">Extra revenue every single week. Money you're leaving on the table today, that Nabad turns back on for you.</div>
       <div class="boom-stats">
         <div>
           <div class="boom-stat-label">Per month</div>
@@ -3188,7 +3261,7 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       </div>
     </div>
 
-    <div class="calc-disclaimer">Approximate figures — your real numbers may be even higher.</div>
+    <div class="calc-disclaimer">Approximate figures. Your real numbers may be even higher.</div>
   </div>
 </section>
 
@@ -3200,19 +3273,19 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
   </div>
   <div class="gs-list">
     <div class="gs-step reveal">
-      <div class="gs-num-inline">01</div>
+      <div class="gs-img"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=75&auto=format&fit=crop" alt=""/></div>
       <div class="gs-title">Submit your <em>information</em></div>
-      <div class="gs-desc"><a href="#" onclick="event.preventDefault();openModal()">Fill out the form</a> to tell us a bit about your studio. Once submitted, a dedicated sales rep will reach out to you directly.</div>
+      <div class="gs-desc"><a href="#" onclick="event.preventDefault();openModal()">Fill out the form</a> to tell us a bit about your studio. This helps us kick off the onboarding process.</div>
     </div>
     <div class="gs-step reveal">
-      <div class="gs-num-inline">02</div>
+      <div class="gs-img"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&q=75&auto=format&fit=crop" alt=""/></div>
       <div class="gs-title">Go <em>live</em></div>
       <div class="gs-desc">During onboarding we'll build a custom profile to showcase your space, and unlock the dashboard, reporting, and partner guidance to start attracting new clients.</div>
     </div>
     <div class="gs-step reveal">
-      <div class="gs-num-inline">03</div>
+      <div class="gs-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=75&auto=format&fit=crop" alt=""/></div>
       <div class="gs-title">Start <em>earning</em></div>
-      <div class="gs-desc">Once you're live, you fill empty spots, add incremental revenue, and welcome high-intent Nabad members through your door — within just a few weeks.</div>
+      <div class="gs-desc">Once you're live, you fill empty spots, add incremental revenue, and welcome high-intent Nabad members through your door, within just a few weeks.</div>
     </div>
   </div>
 </section>
@@ -3227,6 +3300,10 @@ select.form-input:invalid { color: rgba(30,26,23,0.45); }
       <div class="contact-item">
         <div class="contact-label">Email</div>
         <div class="contact-val"><a href="mailto:studionabad@gmail.com">studionabad@gmail.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">WhatsApp</div>
+        <div class="contact-val"><a href="https://wa.me/19299974067" target="_blank" rel="noopener">+1 929 997 4067</a></div>
       </div>
     </div>
     <button class="cta-btn reveal" onclick="openModal()">Become a Partner →</button>
@@ -3246,21 +3323,6 @@ function openModal() { modal.classList.add('open'); document.body.style.overflow
 function closeModal() { modal.classList.remove('open'); document.body.style.overflow = ''; }
 modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-// Show "Other" text field when selected in Business type
-function toggleBusinessOther() {
-  const sel = document.getElementById('business-type');
-  const other = document.getElementById('business-type-other');
-  if (sel.value === 'Other') {
-    other.style.display = 'block';
-    other.required = true;
-    other.focus();
-  } else {
-    other.style.display = 'none';
-    other.required = false;
-    other.value = '';
-  }
-}
 
 // Nav scroll effect
 const nav = document.getElementById('main-nav');

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cookies — Nabad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/anim.css"/>
+<link rel="icon" type="image/png" href="assets/IMG_7429.png"/>
+<link rel="apple-touch-icon" href="assets/IMG_7429.png"/>
+<style>
+:root{
+  --bg:#EDEBE6;--ink:#1E1A17;--slate:#717D8A;
+  --line:rgba(30,26,23,0.12);
+  --terra:#B06E52;--terra-d:#8E5740;--terra-l:#F6E9E1;
+  --f-sans:'Manrope',-apple-system,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+@media(min-width:900px){.wrap{padding:0 40px}}
+
+.nav{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-logo{display:inline-flex;align-items:center;font-size:24px;font-weight:800;letter-spacing:-.03em}
+.nav-logo img{height:72px;width:auto;display:block}
+@media(min-width:760px){.nav-logo img{height:96px}}
+.nav-burger{width:40px;height:40px;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:transparent}
+.nav-burger span{width:22px;height:2px;background:var(--ink);border-radius:2px}
+
+.menu{position:fixed;inset:0;z-index:70;background:var(--bg);display:none;flex-direction:column;padding:14px 0 24px}
+.menu.open{display:flex}
+.menu-top{display:flex;justify-content:space-between;align-items:center;padding:0 20px 20px}
+.menu-close{font-size:28px;font-weight:400;line-height:1;background:transparent;color:var(--ink)}
+.menu-list{display:flex;flex-direction:column;flex:1}
+.menu-list a{padding:18px 20px;font-size:20px;font-weight:600;border-bottom:1px solid var(--line)}
+.menu-list a:first-child{border-top:1px solid var(--line)}
+
+.page-hero{background:var(--terra-l);padding:48px 0 32px}
+.page-hero h1{font-size:clamp(32px,7vw,48px);font-weight:800;letter-spacing:-.025em;line-height:1.05}
+.page-hero p{font-size:14.5px;color:var(--slate);margin-top:14px}
+
+.content{padding:48px 0 64px}
+.content .inner{max-width:780px}
+.content h2{font-size:clamp(20px,4vw,26px);font-weight:800;letter-spacing:-.01em;margin:32px 0 12px}
+.content h2:first-child{margin-top:0}
+.content p, .content li{font-size:16px;line-height:1.65;margin-bottom:10px}
+.content ul{padding-left:22px;display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.content a{color:var(--terra);text-decoration:underline}
+
+.footer{background:#000;color:#fff;padding:56px 0 40px}
+.footer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:36px 24px}
+@media(min-width:800px){.footer-grid{grid-template-columns:repeat(4,1fr);gap:48px}}
+.footer h4{font-size:22px;font-weight:700;margin-bottom:18px;letter-spacing:-.01em}
+.footer ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+.footer a{color:#fff;font-size:17px;font-weight:400}
+.footer a:hover{text-decoration:underline}
+.footer-apps{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+.app-btn{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border:1.5px solid rgba(255,255,255,.4);border-radius:12px;color:#fff;font-weight:600;transition:background .15s, border-color .15s}
+.app-btn:hover{background:rgba(255,255,255,.08);border-color:#fff;text-decoration:none}
+.app-btn svg{width:22px;height:22px;flex-shrink:0;fill:currentColor}
+.app-btn span{display:flex;flex-direction:column;line-height:1.1;text-align:left}
+.app-btn small{font-size:10px;font-weight:500;opacity:.7}
+.app-btn strong{font-size:14px;font-weight:700}
+.footer-bottom{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:13px;color:#888}
+.footer-legal{display:flex;flex-wrap:wrap;gap:18px}
+.footer-legal a{color:#888;font-size:13px;font-weight:400}
+.footer-legal a:hover{color:#fff}
+</style>
+<!-- OG START -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://kevinazarproo-rgb.github.io/nabad-website/cookies.html"/>
+<meta property="og:title" content="Cookies — Nabad"/>
+<meta property="og:description" content="Nabad's cookie policy."/>
+<meta property="og:image" content="https://kevinazarproo-rgb.github.io/nabad-website/assets/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Cookies — Nabad"/>
+<meta name="twitter:description" content="Nabad's cookie policy."/>
+<meta name="twitter:image" content="https://kevinazarproo-rgb.github.io/nabad-website/assets/og-image.jpg"/>
+<!-- OG END -->
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav-logo"><img src="assets/logo-wordmark.png" alt="Nabad"/></a>
+  <button class="nav-burger" onclick="document.getElementById('menu').classList.add('open')"><span></span><span></span><span></span></button>
+</header>
+
+<div class="menu" id="menu">
+  <div class="menu-top">
+    <span class="nav-logo"><img src="assets/logo-wordmark.png" alt="Nabad"/></span>
+    <button class="menu-close" onclick="document.getElementById('menu').classList.remove('open')">×</button>
+  </div>
+  <div class="menu-list">
+    <a href="index.html">Home</a>
+    <a href="plans.html">Plans</a>
+    <a href="refer.html">Refer a friend</a>
+    <a href="index.html#how">How it works</a>
+    <a href="studios.html">For studios</a>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <h1 class="fx-up fx-up-1">Cookie policy</h1>
+    <p class="fx-up fx-up-2">Last updated: May 2026</p>
+  </div>
+</section>
+
+<section class="content reveal">
+  <div class="wrap"><div class="inner">
+    <h2>What are cookies?</h2>
+    <p>Cookies are small text files stored on your device when you visit a website. They help us remember your preferences, keep you signed in, and understand how Nabad is used so we can make it better.</p>
+
+    <h2>What we use</h2>
+    <ul>
+      <li><strong>Essential cookies:</strong> keep you signed in and remember your session. Without these the app won't work.</li>
+      <li><strong>Analytics cookies:</strong> measure traffic and feature usage so we can improve the product. We use anonymous, aggregated data.</li>
+      <li><strong>Preference cookies:</strong> remember your settings (language, location).</li>
+    </ul>
+    <p>We don't use cookies for cross-site advertising.</p>
+
+    <h2>Managing cookies</h2>
+    <p>You can disable non-essential cookies in your browser settings. Note that disabling essential cookies may prevent parts of Nabad from working.</p>
+
+    <h2>Changes</h2>
+    <p>If we materially change this policy, we'll update the "last updated" date and notify you via the app or email.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? <a href="mailto:studionabad@gmail.com">studionabad@gmail.com</a>.</p>
+  </div></div>
+</section>
+
+<footer class="footer reveal">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><h4>For movers</h4><ul><li><a href="plans.html">Plans</a></li><li><a href="refer.html">Refer a friend</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="index.html#how">How it works</a></li></ul></div>
+      <div><h4>For studios</h4><ul><li><a href="studios.html">Become a partner</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="mailto:studionabad@gmail.com">Contact</a></li><li><a href="https://wa.me/19299974067" target="_blank" rel="noopener">WhatsApp +1 929 997 4067</a></li><li><a href="https://instagram.com/nabadapp" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;gap:8px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg><span>Instagram</span></a></li><li><a href="press.html">Press</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="help.html">Help</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-apps">
+      <a href="coming-soon.html" class="app-btn"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small><strong>App Store</strong></span></a>
+      <a href="coming-soon.html" class="app-btn"><svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.491 12l2.207-2.49zM5.864 2.658L16.802 8.99l-2.302 2.302-8.636-8.634z"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Nabad. All rights reserved.</span><div class="footer-legal"><a href="terms.html">Terms of use</a><a href="privacy.html">Privacy policy</a><a href="cookies.html">Cookies</a></div><span>Made in Beirut</span></div>
+  </div>
+</footer>
+<script src="assets/anim.js" defer></script>
+</body>
+</html>

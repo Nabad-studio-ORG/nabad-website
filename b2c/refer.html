@@ -8,9 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/anim.css"/>
-<link rel="icon" type="image/png" href="assets/IMG_7429.png"/>
-<link rel="apple-touch-icon" href="assets/IMG_7429.png"/>
+<link rel="stylesheet" href="../assets/anim.css"/>
+<link rel="icon" type="image/png" href="../assets/IMG_7429.png"/>
+<link rel="apple-touch-icon" href="../assets/IMG_7429.png"/>
 <style>
 :root{
   --bg:#EDEBE6;--bg-soft:#E2DFD8;
@@ -229,7 +229,7 @@ img{max-width:100%;display:block}
 
 <!-- NAV -->
 <header class="nav">
-  <a href="index.html" class="nav-logo"><img src="assets/logo-wordmark.png" alt="Nabad"/></a>
+  <a href="index.html" class="nav-logo"><img src="../assets/logo-wordmark.png" alt="Nabad"/></a>
   <button class="nav-burger" aria-label="Open menu" onclick="document.getElementById('menu').classList.add('open')">
     <span></span><span></span><span></span>
   </button>
@@ -238,7 +238,7 @@ img{max-width:100%;display:block}
 <!-- MENU -->
 <div class="menu" id="menu">
   <div class="menu-top">
-    <span class="nav-logo"><img src="assets/logo-wordmark.png" alt="Nabad"/></span>
+    <span class="nav-logo"><img src="../assets/logo-wordmark.png" alt="Nabad"/></span>
     <button class="menu-close" aria-label="Close" onclick="document.getElementById('menu').classList.remove('open')">×</button>
   </div>
   <div class="menu-list">
@@ -267,7 +267,7 @@ img{max-width:100%;display:block}
         <!-- Phone 1: Nabad app (real screenshot) -->
         <div class="phone tilt-l">
           <div class="phone-screen" style="height:308px">
-            <img src="assets/app-mockup.jpeg" alt="Nabad app on iPhone" style="width:100%;height:100%;object-fit:cover;object-position:top"/>
+            <img src="../assets/app-mockup.jpeg" alt="Nabad app on iPhone" style="width:100%;height:100%;object-fit:cover;object-position:top"/>
           </div>
         </div>
         <!-- Phone 2: iMessage share -->
@@ -479,6 +479,6 @@ function showToast(){
   setTimeout(()=>el.classList.remove('show'), 2200);
 }
 </script>
-<script src="assets/anim.js" defer></script>
+<script src="../assets/anim.js" defer></script>
 </body>
 </html>

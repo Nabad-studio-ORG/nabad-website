@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Privacy policy — Nabad</title>
+<title>Help — Nabad</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/anim.css"/>
-<link rel="icon" type="image/png" href="assets/IMG_7429.png"/>
-<link rel="apple-touch-icon" href="assets/IMG_7429.png"/>
+<link rel="stylesheet" href="../assets/anim.css"/>
+<link rel="icon" type="image/png" href="../assets/IMG_7429.png"/>
+<link rel="apple-touch-icon" href="../assets/IMG_7429.png"/>
 <style>
 :root{
   --bg:#EDEBE6;--bg-soft:#E2DFD8;
@@ -40,18 +40,28 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 .menu-list{display:flex;flex-direction:column;flex:1}
 .menu-list a{padding:18px 20px;font-size:20px;font-weight:600;border-bottom:1px solid var(--line)}
 .menu-list a:first-child{border-top:1px solid var(--line)}
+.menu-bottom{padding:24px 20px 0}
+.btn-primary{display:block;width:100%;text-align:center;background:var(--terra);color:#fff;padding:18px 24px;border-radius:100px;font-size:16px;font-weight:700;transition:background .15s}
+.btn-primary:hover{background:var(--terra-d)}
 
 .page-hero{background:var(--terra-l);padding:48px 0 32px}
 .page-hero h1{font-size:clamp(32px,7vw,48px);font-weight:800;letter-spacing:-.025em;line-height:1.05}
-.page-hero p{font-size:14.5px;color:var(--slate);margin-top:14px}
+.page-hero p{font-size:16px;color:var(--ink);margin-top:14px;max-width:60ch}
 
 .content{padding:48px 0 64px}
-.content .inner{max-width:780px}
-.content h2{font-size:clamp(20px,4vw,26px);font-weight:800;letter-spacing:-.01em;margin:32px 0 12px}
+.content h2{font-size:clamp(22px,4vw,28px);font-weight:800;letter-spacing:-.01em;margin:32px 0 14px}
 .content h2:first-child{margin-top:0}
-.content p, .content li{color:var(--ink);font-size:16px;line-height:1.65;margin-bottom:10px}
-.content ul{padding-left:22px;display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.content p, .content li{color:var(--ink);font-size:16px;line-height:1.6}
+.content ul{padding-left:22px;display:flex;flex-direction:column;gap:8px;margin-top:8px}
 .content a{color:var(--terra);text-decoration:underline}
+
+.faq-list{max-width:760px;border-top:1px solid var(--line);margin-top:8px}
+.faq-i{border-bottom:1px solid var(--line)}
+.faq-q{list-style:none;cursor:pointer;padding:20px 4px;font-size:17px;font-weight:600;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.faq-q::-webkit-details-marker{display:none}
+.faq-q::after{content:'+';font-weight:400;font-size:22px;color:var(--ink);transition:transform .2s}
+.faq-i[open] .faq-q::after{transform:rotate(45deg)}
+.faq-a{padding:0 4px 20px;color:var(--slate);font-size:15px;line-height:1.6}
 
 .footer{background:#000;color:#fff;padding:56px 0 40px}
 .footer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:36px 24px}
@@ -74,28 +84,28 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 </style>
 <!-- OG START -->
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://kevinazarproo-rgb.github.io/nabad-website/privacy.html"/>
-<meta property="og:title" content="Privacy policy — Nabad"/>
-<meta property="og:description" content="How Nabad handles your data."/>
+<meta property="og:url" content="https://kevinazarproo-rgb.github.io/nabad-website/help.html"/>
+<meta property="og:title" content="Help — Nabad"/>
+<meta property="og:description" content="Everything you need to make the most of Nabad. Bookings, credits, plans and more."/>
 <meta property="og:image" content="https://kevinazarproo-rgb.github.io/nabad-website/assets/og-image.jpg"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Privacy policy — Nabad"/>
-<meta name="twitter:description" content="How Nabad handles your data."/>
+<meta name="twitter:title" content="Help — Nabad"/>
+<meta name="twitter:description" content="Everything you need to make the most of Nabad. Bookings, credits, plans and more."/>
 <meta name="twitter:image" content="https://kevinazarproo-rgb.github.io/nabad-website/assets/og-image.jpg"/>
 <!-- OG END -->
 </head>
 <body>
 
 <header class="nav">
-  <a href="index.html" class="nav-logo"><img src="assets/logo-wordmark.png" alt="Nabad"/></a>
-  <button class="nav-burger" onclick="document.getElementById('menu').classList.add('open')"><span></span><span></span><span></span></button>
+  <a href="index.html" class="nav-logo"><img src="../assets/logo-wordmark.png" alt="Nabad"/></a>
+  <button class="nav-burger" aria-label="Open menu" onclick="document.getElementById('menu').classList.add('open')"><span></span><span></span><span></span></button>
 </header>
 
 <div class="menu" id="menu">
   <div class="menu-top">
-    <span class="nav-logo"><img src="assets/logo-wordmark.png" alt="Nabad"/></span>
+    <span class="nav-logo"><img src="../assets/logo-wordmark.png" alt="Nabad"/></span>
     <button class="menu-close" onclick="document.getElementById('menu').classList.remove('open')">×</button>
   </div>
   <div class="menu-list">
@@ -109,62 +119,39 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 
 <section class="page-hero">
   <div class="wrap">
-    <h1 class="fx-up fx-up-1">Privacy policy</h1>
-    <p class="fx-up fx-up-2">Last updated: May 2026</p>
+    <h1 class="fx-up fx-up-1">Help center</h1>
+    <p class="fx-up fx-up-2">Everything you need to make the most of Nabad. Can't find what you're looking for? Email us at <a href="mailto:studionabad@gmail.com" style="color:var(--terra);text-decoration:underline">studionabad@gmail.com</a>.</p>
   </div>
 </section>
 
 <section class="content reveal">
-  <div class="wrap"><div class="inner">
-    <h2>1. Who we are</h2>
-    <p>Nabad ("we", "us") is a fitness membership platform based in Beirut, Lebanon. We're responsible for the personal data described in this policy.</p>
+  <div class="wrap" style="max-width:780px">
+    <h2>Getting started</h2>
+    <div class="faq-list">
+      <details class="faq-i"><summary class="faq-q">How do I sign up for Nabad?</summary><div class="faq-a">The Nabad app is launching soon. Head to the <a href="plans.html">plans page</a> to see options and we'll let you know the moment we go live.</div></details>
+      <details class="faq-i"><summary class="faq-q">Which studios are part of Nabad?</summary><div class="faq-a">All Nabad partner studios across Lebanon. The full list will be available in the app at launch.</div></details>
+      <details class="faq-i"><summary class="faq-q">How do credits work?</summary><div class="faq-a">Each plan gives you a number of credits per month. Each class costs a number of credits depending on the studio, time slot, and popularity.</div></details>
+    </div>
 
-    <h2>2. Data we collect</h2>
-    <p>We collect data you give us and data generated as you use Nabad:</p>
-    <ul>
-      <li><strong>Account data:</strong> name, email, phone, password.</li>
-      <li><strong>Payment data:</strong> handled by our payment processor. We never store your full card number.</li>
-      <li><strong>Booking data:</strong> classes you book, attend, or cancel.</li>
-      <li><strong>Device data:</strong> device type, OS, app version, approximate location.</li>
-      <li><strong>Communications:</strong> messages you send to support.</li>
-    </ul>
+    <h2>Bookings &amp; credits</h2>
+    <div class="faq-list">
+      <details class="faq-i"><summary class="faq-q">Can I cancel a reservation?</summary><div class="faq-a">Yes, cancel at least 12 hours before class and your credits return automatically. Cancellations less than 12 hours before class are charged 100% of the credits used. No refund.</div></details>
+      <details class="faq-i"><summary class="faq-q">What if I miss a class?</summary><div class="faq-a">A no-show is charged 100% of the credits used to book the class. No refund.</div></details>
+      <details class="faq-i"><summary class="faq-q">Do unused credits roll over?</summary><div class="faq-a">Yes. Any credits you don't use stay on your account. If you have 5 credits left at the end of the month, they're still there next month on top of your new allowance.</div></details>
+    </div>
 
-    <h2>3. How we use your data</h2>
-    <ul>
-      <li>To run your membership and process bookings.</li>
-      <li>To process payments and prevent fraud.</li>
-      <li>To send you class reminders, receipts, and product updates.</li>
-      <li>To improve the app and recommend studios you'll like.</li>
-      <li>To comply with legal obligations.</li>
-    </ul>
+    <h2>Account &amp; billing</h2>
+    <div class="faq-list">
+      <details class="faq-i"><summary class="faq-q">How do I cancel my plan?</summary><div class="faq-a"><strong>Monthly:</strong> cancel from the app at any time. The current month isn't refundable, but your plan stops renewing the next month.<br/><strong>Annual:</strong> once purchased, the annual plan is non-refundable.</div></details>
+      <details class="faq-i"><summary class="faq-q">Can I change my plan?</summary><div class="faq-a">Yes, you can upgrade or downgrade your plan at any time from the app. Changes apply at your next billing date.</div></details>
+    </div>
 
-    <h2>4. Sharing</h2>
-    <p>We share the minimum needed to make Nabad work:</p>
-    <ul>
-      <li><strong>Partner studios:</strong> your name and booking details when you reserve a class.</li>
-      <li><strong>Service providers:</strong> payments, hosting, analytics, and email, under contract to protect your data.</li>
-      <li><strong>Legal:</strong> when required by law.</li>
-    </ul>
-    <p>We do not sell your personal data.</p>
-
-    <h2>5. Cookies &amp; tracking</h2>
-    <p>The website and app use cookies and similar technologies to keep you signed in, remember preferences, and measure usage. You can disable non-essential cookies in your browser.</p>
-
-    <h2>6. Data retention</h2>
-    <p>We keep your account data while your membership is active and for a reasonable period after cancellation to comply with legal and accounting requirements.</p>
-
-    <h2>7. Your rights</h2>
-    <p>You can request access to your data, correction of inaccurate data, deletion of your account, or a copy of your data. Email <a href="mailto:studionabad@gmail.com">studionabad@gmail.com</a> and we'll respond within 30 days.</p>
-
-    <h2>8. Security</h2>
-    <p>We use industry-standard measures to protect your data: encrypted connections, hashed passwords, restricted access. No system is 100% secure, but we take this seriously.</p>
-
-    <h2>9. Changes</h2>
-    <p>If we materially change this policy, we'll notify you via the app or email before it takes effect.</p>
-
-    <h2>10. Contact</h2>
-    <p>For privacy questions or requests: <a href="mailto:studionabad@gmail.com">studionabad@gmail.com</a>.</p>
-  </div></div>
+    <h2>For studios</h2>
+    <div class="faq-list">
+      <details class="faq-i"><summary class="faq-q">How do I list my studio on Nabad?</summary><div class="faq-a">Fill out the partner form on the <a href="studios.html">For studios</a> page and our team will reach out within 24 hours.</div></details>
+      <details class="faq-i"><summary class="faq-q">Is there a setup fee?</summary><div class="faq-a">No setup fee, no commitment. You only pay per filled spot.</div></details>
+    </div>
+  </div>
 </section>
 
 <footer class="footer reveal">
@@ -182,6 +169,6 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
     <div class="footer-bottom"><span>&copy; 2026 Nabad. All rights reserved.</span><div class="footer-legal"><a href="terms.html">Terms of use</a><a href="privacy.html">Privacy policy</a><a href="cookies.html">Cookies</a></div><span>Made in Beirut</span></div>
   </div>
 </footer>
-<script src="assets/anim.js" defer></script>
+<script src="../assets/anim.js" defer></script>
 </body>
 </html>

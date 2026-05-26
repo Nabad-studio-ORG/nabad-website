@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Press — Nabad</title>
+<title>Cookies — Nabad</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/anim.css"/>
-<link rel="icon" type="image/png" href="assets/IMG_7429.png"/>
-<link rel="apple-touch-icon" href="assets/IMG_7429.png"/>
+<link rel="stylesheet" href="../assets/anim.css"/>
+<link rel="icon" type="image/png" href="../assets/IMG_7429.png"/>
+<link rel="apple-touch-icon" href="../assets/IMG_7429.png"/>
 <style>
 :root{
   --bg:#EDEBE6;--ink:#1E1A17;--slate:#717D8A;
@@ -34,33 +34,22 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 .menu{position:fixed;inset:0;z-index:70;background:var(--bg);display:none;flex-direction:column;padding:14px 0 24px}
 .menu.open{display:flex}
 .menu-top{display:flex;justify-content:space-between;align-items:center;padding:0 20px 20px}
-.menu-close{font-size:28px;background:transparent;color:var(--ink);line-height:1}
+.menu-close{font-size:28px;font-weight:400;line-height:1;background:transparent;color:var(--ink)}
 .menu-list{display:flex;flex-direction:column;flex:1}
 .menu-list a{padding:18px 20px;font-size:20px;font-weight:600;border-bottom:1px solid var(--line)}
 .menu-list a:first-child{border-top:1px solid var(--line)}
 
 .page-hero{background:var(--terra-l);padding:48px 0 32px}
 .page-hero h1{font-size:clamp(32px,7vw,48px);font-weight:800;letter-spacing:-.025em;line-height:1.05}
-.page-hero p{font-size:16px;color:var(--ink);margin-top:14px;max-width:60ch}
+.page-hero p{font-size:14.5px;color:var(--slate);margin-top:14px}
 
-.content{padding:40px 0 64px}
-.inner{max-width:600px;margin:0 auto}
-.field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
-.field label{font-size:13px;font-weight:600;color:var(--ink)}
-.field input,.field textarea{
-  font:inherit;color:var(--ink);
-  border:1.5px solid rgba(30,26,23,.18);
-  background:#fff;padding:14px 16px;border-radius:12px;
-  outline:none;transition:border-color .15s;
-}
-.field input:focus,.field textarea:focus{border-color:var(--terra)}
-.field textarea{resize:vertical;min-height:140px;font-family:inherit}
-.submit{
-  width:100%;background:var(--ink);color:#fff;
-  padding:18px;border-radius:100px;font-size:16px;font-weight:700;
-  border:none;cursor:pointer;transition:background .15s;
-}
-.submit:hover{background:var(--terra)}
+.content{padding:48px 0 64px}
+.content .inner{max-width:780px}
+.content h2{font-size:clamp(20px,4vw,26px);font-weight:800;letter-spacing:-.01em;margin:32px 0 12px}
+.content h2:first-child{margin-top:0}
+.content p, .content li{font-size:16px;line-height:1.65;margin-bottom:10px}
+.content ul{padding-left:22px;display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.content a{color:var(--terra);text-decoration:underline}
 
 .footer{background:#000;color:#fff;padding:56px 0 40px}
 .footer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:36px 24px}
@@ -83,28 +72,28 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 </style>
 <!-- OG START -->
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://kevinazarproo-rgb.github.io/nabad-website/press.html"/>
-<meta property="og:title" content="Press & media — Nabad"/>
-<meta property="og:description" content="Working on a story about Nabad or the fitness scene in Lebanon? Get in touch."/>
+<meta property="og:url" content="https://kevinazarproo-rgb.github.io/nabad-website/cookies.html"/>
+<meta property="og:title" content="Cookies — Nabad"/>
+<meta property="og:description" content="Nabad's cookie policy."/>
 <meta property="og:image" content="https://kevinazarproo-rgb.github.io/nabad-website/assets/og-image.jpg"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Press & media — Nabad"/>
-<meta name="twitter:description" content="Working on a story about Nabad or the fitness scene in Lebanon? Get in touch."/>
+<meta name="twitter:title" content="Cookies — Nabad"/>
+<meta name="twitter:description" content="Nabad's cookie policy."/>
 <meta name="twitter:image" content="https://kevinazarproo-rgb.github.io/nabad-website/assets/og-image.jpg"/>
 <!-- OG END -->
 </head>
 <body>
 
 <header class="nav">
-  <a href="index.html" class="nav-logo"><img src="assets/logo-wordmark.png" alt="Nabad"/></a>
+  <a href="index.html" class="nav-logo"><img src="../assets/logo-wordmark.png" alt="Nabad"/></a>
   <button class="nav-burger" onclick="document.getElementById('menu').classList.add('open')"><span></span><span></span><span></span></button>
 </header>
 
 <div class="menu" id="menu">
   <div class="menu-top">
-    <span class="nav-logo"><img src="assets/logo-wordmark.png" alt="Nabad"/></span>
+    <span class="nav-logo"><img src="../assets/logo-wordmark.png" alt="Nabad"/></span>
     <button class="menu-close" onclick="document.getElementById('menu').classList.remove('open')">×</button>
   </div>
   <div class="menu-list">
@@ -118,34 +107,33 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 
 <section class="page-hero">
   <div class="wrap">
-    <h1 class="fx-up fx-up-1">Press &amp; media</h1>
-    <p class="fx-up fx-up-2">Working on a story about Nabad or the fitness scene in Lebanon? Drop your email and a quick note. We'll get back to you within 48 hours.</p>
+    <h1 class="fx-up fx-up-1">Cookie policy</h1>
+    <p class="fx-up fx-up-2">Last updated: May 2026</p>
   </div>
 </section>
 
 <section class="content reveal">
-  <div class="wrap">
-    <div class="inner">
-      <form id="pressForm" action="https://formspree.io/f/xwvyqbnp" method="POST">
-        <input type="hidden" name="_subject" value="Press inquiry"/>
-        <input type="hidden" name="form_source" value="press.html"/>
-        <div class="field">
-          <label for="email">Your email *</label>
-          <input id="email" name="Email" type="email" required/>
-        </div>
-        <div class="field">
-          <label for="name">Your name (and outlet, if any)</label>
-          <input id="name" name="Name" type="text"/>
-        </div>
-        <div class="field">
-          <label for="msg">What's your story? *</label>
-          <textarea id="msg" name="Story" required placeholder="Tell us what you're working on, what you need, and any deadlines we should know about."></textarea>
-        </div>
-        <button class="submit" type="submit">Send to press team</button>
-      </form>
-      <div id="pressSuccess" style="display:none;margin-top:20px;padding:18px;background:var(--terra-l);color:var(--terra-d);border-radius:12px;font-weight:600">Thanks! We'll reach out within 48 hours.</div>
-    </div>
-  </div>
+  <div class="wrap"><div class="inner">
+    <h2>What are cookies?</h2>
+    <p>Cookies are small text files stored on your device when you visit a website. They help us remember your preferences, keep you signed in, and understand how Nabad is used so we can make it better.</p>
+
+    <h2>What we use</h2>
+    <ul>
+      <li><strong>Essential cookies:</strong> keep you signed in and remember your session. Without these the app won't work.</li>
+      <li><strong>Analytics cookies:</strong> measure traffic and feature usage so we can improve the product. We use anonymous, aggregated data.</li>
+      <li><strong>Preference cookies:</strong> remember your settings (language, location).</li>
+    </ul>
+    <p>We don't use cookies for cross-site advertising.</p>
+
+    <h2>Managing cookies</h2>
+    <p>You can disable non-essential cookies in your browser settings. Note that disabling essential cookies may prevent parts of Nabad from working.</p>
+
+    <h2>Changes</h2>
+    <p>If we materially change this policy, we'll update the "last updated" date and notify you via the app or email.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? <a href="mailto:studionabad@gmail.com">studionabad@gmail.com</a>.</p>
+  </div></div>
 </section>
 
 <footer class="footer reveal">
@@ -163,21 +151,6 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
     <div class="footer-bottom"><span>&copy; 2026 Nabad. All rights reserved.</span><div class="footer-legal"><a href="terms.html">Terms of use</a><a href="privacy.html">Privacy policy</a><a href="cookies.html">Cookies</a></div><span>Made in Beirut</span></div>
   </div>
 </footer>
-<script src="assets/anim.js" defer></script>
-<script>
-document.getElementById('pressForm').addEventListener('submit', async function(e){
-  e.preventDefault();
-  const form = e.target;
-  const btn = form.querySelector('button[type="submit"]');
-  btn.disabled = true; btn.textContent = 'Sending…';
-  try {
-    const res = await fetch(form.action, {method:'POST', body:new FormData(form), headers:{'Accept':'application/json'}});
-    if(res.ok){
-      form.style.display = 'none';
-      document.getElementById('pressSuccess').style.display = 'block';
-    } else { btn.disabled = false; btn.textContent = 'Send to press team'; alert('Something went wrong. Please email studionabad@gmail.com.'); }
-  } catch(err){ btn.disabled = false; btn.textContent = 'Send to press team'; alert('Something went wrong. Please email studionabad@gmail.com.'); }
-});
-</script>
+<script src="../assets/anim.js" defer></script>
 </body>
 </html>

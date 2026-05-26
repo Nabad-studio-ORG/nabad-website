@@ -1,5 +1,16 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/b2c/index.html" }
+    { "source": "/", "destination": "/b2c/index.html" },
+    { "source": "/plans.html", "destination": "/b2c/plans.html" },
+    { "source": "/studios.html", "destination": "/b2c/studios.html" },
+    { "source": "/reviews.html", "destination": "/b2c/reviews.html" },
+    { "source": "/help.html", "destination": "/b2c/help.html" },
+    { "source": "/cookies.html", "destination": "/b2c/cookies.html" },
+    { "source": "/privacy.html", "destination": "/b2c/privacy.html" },
+    { "source": "/terms.html", "destination": "/b2c/terms.html" },
+    { "source": "/press.html", "destination": "/b2c/press.html" },
+    { "source": "/refer.html", "destination": "/b2c/refer.html" },
+    { "source": "/mobile.html", "destination": "/b2c/mobile.html" },
+    { "source": "/coming-soon.html", "destination": "/b2c/coming-soon.html" }
   ]
 }
